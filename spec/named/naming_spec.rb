@@ -12,6 +12,7 @@ describe Named::Naming do
   end
 
   it "properly formats object ids" do
-    expect(subject.inspect).to include subject.inspect_object_id
+    _, hex_object_id = subject.inspect_object_id.split('x')
+    expect(subject.inspect).to include hex_object_id
   end
 end

@@ -18,7 +18,6 @@ module Named
       end
     end
 
-    # implementation from: http://stackoverflow.com/a/2818916/4376
     def to_s
       "#<#{self.class}:#{inspect_object_id}>".sub(":#{self.class.inspect_object_id}", '')
     end
