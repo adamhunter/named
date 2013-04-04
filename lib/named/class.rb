@@ -19,6 +19,7 @@ module Named
 
     module InstanceMethods
       include Inspection
+
       def to_s
         "#<#{self.class}:#{inspect_object_id}>".sub(":#{self.class.inspect_object_id}", '')
       end
