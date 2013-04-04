@@ -15,7 +15,7 @@ fancy_module = Named::Module.new('FancyModule') do
   end
 end
 
-fancy_module.inspect # => "Named::Module:FancyModule:0x007fa9ea9e6178"
+fancy_module.inspect # => "Named::Module:FancyModule:0x7fa9ea9e6178"
 ```
 
 ### Named classes
@@ -29,15 +29,15 @@ fancy_class = Named::Class.new('FancyClass', Array) do
 end
 
 # Inspection string shows the superclass
-fancy_class.inspect => "Named::Class:Array:FancyClass:0x007fa9ea8aaea8"
+fancy_class.inspect => "Named::Class:Array:FancyClass:0x7fa9ea8aaea8"
 ```
 
 ### Using them together
 ```ruby
 fancy_class.send(:include, fancy_module)
 
-fancy_class.ancestors # => [Named::Class:Array:FancyClass:0x007fa9ea8aaea8,
-                      #     Named::Module:FancyModule:0x007fa9ea9e6178,
+fancy_class.ancestors # => [Named::Class:Array:FancyClass:0x7fa9ea8aaea8,
+                      #     Named::Module:FancyModule:0x7fa9ea9e6178,
                       #     Named::Class, Named::Naming,
                       #     Array, Kernel, BasicObject]
 
