@@ -2,6 +2,7 @@
 
 Give anonymous modules and classes names when they are inspected.
 
+[![Build Status](https://secure.travis-ci.org/adamhunter/named.png?branch=master)](http://travis-ci.org/adamhunter/named)
 [![Code Climate](https://codeclimate.com/github/adamhunter/named.png)](https://codeclimate.com/github/adamhunter/named)
 
 ## Usage
