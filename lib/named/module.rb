@@ -1,6 +1,6 @@
 module Named
   class Module < ::Module
-    include Naming
+    include Inspection, Naming
 
     def initialize(name, &block)
       super(&block)

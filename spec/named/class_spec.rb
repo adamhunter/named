@@ -7,6 +7,10 @@ describe Named::Class do
     expect(Named::Class).to be_a(Module)
   end
 
+  it "is a Named::Class" do
+    expect(subject).to be_a(Named::Class)
+  end
+
   describe "class creation" do
     it "has the provided code block as its body" do
       expect(subject.new).to respond_to(:foo)
@@ -37,6 +41,14 @@ describe Named::Class do
 
   describe "instances" do
     let(:instance) { subject.new }
+
+    it "is not a Named::Class" do
+      expect(instance).not_to be_a(Named::Class)
+    end
+
+    it "does not have a name accessor" do
+      expect(instance).not_to respond_to(:name)
+    end
 
     describe "to_s" do
       it "starts with Named::Class" do
