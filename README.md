@@ -36,10 +36,10 @@ fancy_class.inspect => "Named::Class:Array:FancyClass:0x007fa9ea8aaea8"
 ```ruby
 fancy_class.send(:include, fancy_module)
 
-fancy_class.ancestors # => [Named::Class:Array:FancyClass:0x007fa9ea8aaea8, 
-                            Named::Module:FancyModule:0x007fa9ea9e6178, 
-                            Named::Class, Named::Naming, 
-                            Array, Kernel, BasicObject]
+fancy_class.ancestors # => [Named::Class:Array:FancyClass:0x007fa9ea8aaea8,
+                      #     Named::Module:FancyModule:0x007fa9ea9e6178,
+                      #     Named::Class, Named::Naming,
+                      #     Array, Kernel, BasicObject]
 
 instance = fancy_class.new
 
